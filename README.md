@@ -1,5 +1,7 @@
 # Go router Safari swipe-to-back bug
 
+<img src="bug.gif"/>
+
 ## To reproduce the bug
 
 1. Build and run as **target web**
