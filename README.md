@@ -1,16 +1,15 @@
-# goscheisse
+# Go router Safari swipe-to-back bug
 
-Test project to see if bugs appear
+## To reproduce the bug
 
-## Getting Started
+1. Build and run as **target web**
+2. Open a iPhone emulator, I used older iPhone SE (3rd Generation) with iOS 16.2
+3. Open Safari one iPhone emulator
+4. After Chrome is loaded with the app, copy the URL into the Safari browser of the iPhone emulator to show the app there
+5. Navigate to a sub route
+6. Swipe back: **Important: ** Start swipe from left of the screen, **not** within the screen
+7. Below page is shown twice. (See screenshot/gif)
 
-This project is a starting point for a Flutter application.
+### Expected behavior
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Just the previous page is shown, without flickering or any animation triggered.
