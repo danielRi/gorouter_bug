@@ -1,6 +1,6 @@
 # Go router Safari swipe-to-back bug
 
-<img src="bug.gif"/>
+<img src="bug.gif" width="128"/>
 
 ## To reproduce the bug
 
