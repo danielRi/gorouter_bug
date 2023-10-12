@@ -30,26 +30,27 @@ final _router = GoRouter(
   initialLocation: '/home',
   routes: [
     GoRoute(
-        path: '/home',
-        name: 'home',
-        builder: (_, __) => const Home(),
-        routes: [
-          GoRoute(
-              path: 'sub1',
-              name: 'sub1',
-              builder: (_, __) => const Sub1(),
-              routes: [
-                GoRoute(
-                  path: 'sub1sub',
-                  name: 'sub1sub',
-                  builder: (_, __) => const Sub1Sub(),
-                ),
-              ]),
-          GoRoute(
-            path: 'sub2',
-            name: 'sub2',
-            builder: (_, __) => const Sub2(),
-          ),
-        ]),
+      path: '/home',
+      name: 'home',
+      builder: (_, __) => const Home(),
+      routes: [
+        GoRoute(
+            path: 'sub1',
+            name: 'sub1',
+            builder: (_, __) => const Sub1(),
+            routes: [
+              GoRoute(
+                path: 'sub1sub',
+                name: 'sub1sub',
+                builder: (_, __) => const Sub1Sub(),
+              ),
+            ]),
+        GoRoute(
+          path: 'sub2',
+          name: 'sub2',
+          builder: (_, __) => const Sub2(),
+        ),
+      ],
+    ),
   ],
 );
